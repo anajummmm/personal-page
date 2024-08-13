@@ -1,10 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #a76b99, #6d28d9);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #6d28d9;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        footer {
+            background-color: #a76b99;
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Minha página pessoal</h1>
+    <header>
+        <h1>Meu Blog</h1>
+        <nav>
+            <a href="/">Home</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Bem-vindo ao meu blog!</h2>
+        <p>Este é um blog de exemplo usando Flask com tons de roxo e gradientes.</p>
+    </main>
+    <footer>
+        <p>© 2024 Meu Blog</p>
+    </footer>
 </body>
 </html>
