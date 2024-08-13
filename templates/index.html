@@ -3,40 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Blog</title>
+    <title>Sobre Ana Julia Moraes</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #a76b99, #6d28d9);
-            color: #ffffff;
             margin: 0;
             padding: 0;
+            color: #333;
+            background: linear-gradient(to right, #ff9aab, #ffffff);
         }
 
         header {
-            background-color: #6d28d9;
-            padding: 1rem;
+            background: #ff4d8c;
+            color: #fff;
+            padding: 1rem 2rem;
             text-align: center;
         }
 
-        header h1 {
-            margin: 0;
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
         }
 
         nav a {
-            color: #ffffff;
+            color: #fff;
             text-decoration: none;
             margin: 0 1rem;
+            font-weight: bold;
         }
 
-        main {
+        section {
             padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+            background: #fff;
+            color: #333;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #ff4d8c;
+        }
+
+        .section-content {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .section-content img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: block;
+            margin: 1rem auto;
         }
 
         footer {
-            background-color: #a76b99;
-            padding: 1rem;
+            background: #ff4d8c;
+            color: #fff;
             text-align: center;
+            padding: 1rem;
             position: fixed;
             width: 100%;
             bottom: 0;
@@ -45,17 +81,63 @@
 </head>
 <body>
     <header>
-        <h1>Meu Blog</h1>
+        <h1>Sobre Ana Julia Moraes</h1>
         <nav>
-            <a href="/">Home</a>
+            <a href="#home">Home</a>
+            <a href="#music">Música</a>
+            <a href="#movies">Filmes</a>
+            <a href="#pets">Pets</a>
         </nav>
     </header>
-    <main>
-        <h2>Bem-vindo ao meu blog!</h2>
-        <p>Este é um blog de exemplo usando Flask com tons de roxo e gradientes.</p>
-    </main>
+
+    <section id="home" class="section-title">
+        <h2>Bem-vinda ao Meu Mundo!</h2>
+        <div class="section-content">
+            <p>Olá! Eu sou Ana Julia Moraes e este é um pouco sobre mim e minhas paixões. Sou uma amante de música, cinema e cachorros, e adoro compartilhar o que mais gosto com o mundo.</p>
+        </div>
+    </section>
+
+    <section id="music" class="section-title">
+        <h2>Minhas Preferências Musicais</h2>
+        <div class="section-content">
+            <p>A música é uma parte fundamental da minha vida. Aqui estão alguns dos meus artistas favoritos:</p>
+            <ul>
+                <li><strong>Taylor Swift:</strong> Uma artista versátil conhecida por suas letras sinceras e sua evolução musical.</li>
+                <li><strong>Sabrina Carpenter:</strong> Cantora e atriz com um estilo pop vibrante e promissor.</li>
+                <li><strong>Chappell Roan:</strong> Artista emergente com uma abordagem inovadora e única ao pop.</li>
+            </ul>
+            <img src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/1601/live/0caf7060-2963-11ef-951f-bfad685c889d.jpg.webp" alt="Taylor Swift">
+            <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/08/sabrina-carpenter-publico-brasileiro.png?w=740&h=415&crop=1&quality=50" alt="Sabrina Carpenter">
+            <img src="https://i0.wp.com/www.thewrap.com/wp-content/uploads/2024/06/chappell-roan.jpg?w=1200&ssl=1" alt="Chappell Roan">
+        </div>
+    </section>
+
+    <section id="movies" class="section-title">
+        <h2>Meus Filmes Favoritos</h2>
+        <div class="section-content">
+            <p>Adoro cinema e esses são alguns dos meus filmes favoritos:</p>
+            <ul>
+                <li><strong>La La Land:</strong> Um musical romântico que combina uma história de amor cativante com música e dança incríveis.</li>
+                <li><strong>Little Women:</strong> Uma adaptação tocante do clássico literário que celebra a força e a união familiar.</li>
+                <li><strong>Vagabond:</strong> Um filme francês aclamado por sua narrativa profunda e personagens complexos.</li>
+                <li><strong>The Young Girls of Rochefort:</strong> Um musical francês colorido e encantador que é um verdadeiro deleite visual e musical.</li>
+            </ul>
+            <img src="https://veja.abril.com.br/wp-content/uploads/2017/01/entretenimento-la-la-land-filme-emma-stone-ryan-gosling-copy.jpg?quality=90&strip=info&w=750&h=500&crop=1" alt="La La Land">
+            <img src="https://deliriumnerd.com/wp-content/uploads/2020/01/Little-Women-2019-POSTCOVER-1536x1025.jpg" alt="Little Women">
+            <img src="https://assets.americancinematheque.com/wp-content/uploads/2022/02/22160758/Vagabond-HERO.jpg" alt="Vagabond">
+            <img src="https://reverseshot.org/uploads/entries/images/young_girls_of_rochefort-590x308.jpg" alt="The Young Girls of Rochefort">
+        </div>
+    </section>
+
+    <section id="pets" class="section-title">
+        <h2>Amor por Cachorros</h2>
+        <div class="section-content">
+            <p>Sou uma grande amante de cachorros. Eles são meus amigos leais e trazem muita alegria à minha vida. Abaixo está uma foto de um cachorro adorável para representar o amor que tenho por eles.</p>
+        </div>
+    </section>
+
     <footer>
-        <p>© 2024 Meu Blog</p>
+        <p>© 2024 Ana Julia Moraes. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
